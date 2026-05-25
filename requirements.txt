@@ -1,0 +1,10 @@
+# Libraries imported or required by the current DistilBERT training notebook.
+accelerate>=0.27
+datasets>=2.18
+ipywidgets>=8.0
+jupyterlab>=4.0
+numpy>=1.24
+pandas>=2.0
+scikit-learn>=1.3
+torch>=2.1
+transformers>=4.38
