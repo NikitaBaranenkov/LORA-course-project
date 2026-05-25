@@ -1,0 +1,29 @@
+{
+  "dataset_name": "zeroshot/twitter-financial-news-sentiment",
+  "model": "distilbert-base-uncased",
+  "adaptation": "lora",
+  "seed": 42,
+  "max_length": 128,
+  "selection_metric": "macro_f1",
+  "test_evaluation_after_validation_selection_only": true,
+  "data_paths": {
+    "train": "/content/LORA-course-project/data/processed/train.csv",
+    "validation": "/content/LORA-course-project/data/processed/validation.csv",
+    "test": "/content/LORA-course-project/data/processed/test.csv"
+  },
+  "lora": {
+    "task_type": "SEQ_CLS",
+    "r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.1,
+    "bias": "none",
+    "target_modules": [
+      "q_lin",
+      "v_lin"
+    ],
+    "modules_to_save": [
+      "pre_classifier",
+      "classifier"
+    ]
+  }
+}

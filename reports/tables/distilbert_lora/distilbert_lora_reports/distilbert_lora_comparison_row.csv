@@ -1,0 +1,2 @@
+model,adaptation,test_macro_f1,test_weighted_f1,test_accuracy,bearish_f1,bullish_f1,neutral_f1,total_params,trainable_params,trainable_share,training_time_sec
+distilbert-base-uncased,lora,0.7071118988538343,0.7897769860765483,0.7960636515912898,0.6175115207373272,0.6262857142857143,0.8775384615384615,67696134,740355,1.0936444317484955,114.2499444820005

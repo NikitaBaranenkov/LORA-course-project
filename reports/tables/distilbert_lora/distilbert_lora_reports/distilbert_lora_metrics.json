@@ -1,0 +1,17 @@
+{
+  "run_name": "distilbert_lora",
+  "model": "distilbert-base-uncased",
+  "adaptation": "lora",
+  "selection_metric": "macro_f1",
+  "best_checkpoint": "/content/LORA-course-project/artifacts/distilbert_lora/checkpoints/checkpoint-1521",
+  "training_time_sec": 114.2499444820005,
+  "validation_accuracy": 0.7987421383647799,
+  "validation_macro_f1": 0.7104471875332227,
+  "validation_weighted_f1": 0.7875211365065304,
+  "test_accuracy": 0.7960636515912898,
+  "test_macro_f1": 0.7071118988538343,
+  "test_weighted_f1": 0.7897769860765483,
+  "total_params": 67696134,
+  "trainable_params": 740355,
+  "trainable_share": 1.0936444317484955
+}
