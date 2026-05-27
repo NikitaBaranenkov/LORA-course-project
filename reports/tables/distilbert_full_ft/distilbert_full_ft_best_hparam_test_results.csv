@@ -1,0 +1,2 @@
+model,adaptation,test_macro_f1,test_weighted_f1,test_accuracy,bearish_f1,bullish_f1,neutral_f1,total_params,trainable_params,trainable_share,training_time_sec
+distilbert-base-uncased,full_fine_tuning,0.8445152695396763,0.8815336863152501,0.8806532663316583,0.7917808219178082,0.8224101479915433,0.9193548387096774,66955779,66955779,1.0,156.8225427519999

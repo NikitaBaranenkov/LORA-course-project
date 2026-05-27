@@ -1,0 +1,50 @@
+{
+  "dataset_name": "zeroshot/twitter-financial-news-sentiment",
+  "model": "distilbert-base-uncased",
+  "adaptation": "full_fine_tuning",
+  "seed": 42,
+  "max_length": 128,
+  "selection_metric": "macro_f1",
+  "selection_split": "validation",
+  "test_evaluation_after_validation_selection_only": true,
+  "fixed_grid": [
+    {
+      "learning_rate": 2e-05,
+      "weight_decay": 0.0,
+      "num_train_epochs": 4,
+      "warmup_ratio": 0.06
+    },
+    {
+      "learning_rate": 2e-05,
+      "weight_decay": 0.01,
+      "num_train_epochs": 4,
+      "warmup_ratio": 0.06
+    },
+    {
+      "learning_rate": 5e-05,
+      "weight_decay": 0.0,
+      "num_train_epochs": 4,
+      "warmup_ratio": 0.06
+    },
+    {
+      "learning_rate": 5e-05,
+      "weight_decay": 0.01,
+      "num_train_epochs": 4,
+      "warmup_ratio": 0.06
+    }
+  ],
+  "fixed_training_settings": {
+    "train_batch_size": 16,
+    "eval_batch_size": 32
+  },
+  "selected_config": {
+    "learning_rate": 2e-05,
+    "weight_decay": 0.0,
+    "num_train_epochs": 4,
+    "warmup_ratio": 0.06
+  },
+  "selected_best_checkpoint": "/content/LORA-course-project/artifacts/distilbert_full_ft_hparam_search/checkpoints/config_01/checkpoint-1521",
+  "selected_training_time_sec": 156.8225427519999,
+  "sweep_results_csv": "/content/LORA-course-project/reports/tables/distilbert_full_ft/distilbert_full_ft_hparam_search_validation_results.csv",
+  "final_test_results_csv": "/content/LORA-course-project/reports/tables/distilbert_full_ft/distilbert_full_ft_best_hparam_test_results.csv"
+}

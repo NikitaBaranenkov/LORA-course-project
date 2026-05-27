@@ -1,0 +1,5 @@
+config_id,learning_rate,weight_decay,num_train_epochs,warmup_ratio,val_macro_f1,val_weighted_f1,val_accuracy,training_time_sec,best_checkpoint,total_params,trainable_params,trainable_share
+1,2e-05,0.0,4,0.06,0.8432513007218141,0.8798414446195267,0.8798043326345213,156.8225427519999,/content/LORA-course-project/artifacts/distilbert_full_ft_hparam_search/checkpoints/config_01/checkpoint-1521,66955779,66955779,1.0
+2,2e-05,0.01,4,0.06,0.8426164030442073,0.8797277834952459,0.8798043326345213,245.1483570769999,/content/LORA-course-project/artifacts/distilbert_full_ft_hparam_search/checkpoints/config_02/checkpoint-1521,66955779,66955779,1.0
+4,5e-05,0.01,4,0.06,0.838981004055314,0.8778660141877704,0.8791055206149546,243.0353665969999,/content/LORA-course-project/artifacts/distilbert_full_ft_hparam_search/checkpoints/config_04/checkpoint-2028,66955779,66955779,1.0
+3,5e-05,0.0,4,0.06,0.8386288221582339,0.8764201622359226,0.8770090845562544,269.6442876849999,/content/LORA-course-project/artifacts/distilbert_full_ft_hparam_search/checkpoints/config_03/checkpoint-2028,66955779,66955779,1.0
