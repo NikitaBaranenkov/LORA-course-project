@@ -7,6 +7,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 DATASET_NAME = "zeroshot/twitter-financial-news-sentiment"
 BASE_MODEL_DISTILBERT = "distilbert-base-uncased"
+BASE_MODEL_BERT = "bert-base-uncased"
 
 SEED = 42
 MAX_LENGTH = 128
@@ -29,6 +30,7 @@ label2id = {label: class_id for class_id, label in id2label.items()}
 
 
 __all__ = [
+    "BASE_MODEL_BERT",
     "BASE_MODEL_DISTILBERT",
     "DATASET_NAME",
     "DATA_DIR",

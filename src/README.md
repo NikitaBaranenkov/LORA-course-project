@@ -5,14 +5,15 @@
 пока сохранена в ноутбуке без преждевременного рефакторинга.
 
 Файл `constants.py` фиксирует общие для сравнимых экспериментов значения:
-датасет, базовую модель DistilBERT, seed, `max_length`, основную метрику,
-label mapping и стандартные пути данных/таблиц.
+датасет, базовые модели DistilBERT и BERT, seed, `max_length`, основную
+метрику, label mapping и стандартные пути данных/таблиц.
 
 Из ноутбука, запускаемого из корня репозитория, константы можно импортировать
 так:
 
 ```python
 from src.constants import (
+    BASE_MODEL_BERT,
     BASE_MODEL_DISTILBERT,
     MAX_LENGTH,
     SEED,
