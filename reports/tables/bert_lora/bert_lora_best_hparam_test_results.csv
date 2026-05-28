@@ -1,0 +1,2 @@
+model,adaptation,test_macro_f1,test_weighted_f1,test_accuracy,bearish_f1,bullish_f1,neutral_f1,total_params,trainable_params,trainable_share,training_time_sec
+bert-base-uncased,LoRA,0.8284152512235106,0.8704869805790268,0.8701842546063652,0.7668539325842697,0.805111821086262,0.91328,110076678,592131,0.005379259355919153,178.16214618599997

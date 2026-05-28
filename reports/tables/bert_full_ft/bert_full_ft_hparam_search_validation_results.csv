@@ -1,0 +1,9 @@
+config_id,learning_rate,num_train_epochs,weight_decay,warmup_ratio,val_macro_f1,val_weighted_f1,val_accuracy,training_time_sec,best_checkpoint,total_params,trainable_params,trainable_share
+4,2e-05,4,0.01,0.06,0.8412778701025604,0.8789516204267178,0.8798043326345213,474.77018585500014,/content/LORA-course-project/artifacts/bert_full_ft_hparam_search/checkpoints/config_04/checkpoint-1521,109484547,109484547,1.0
+3,2e-05,4,0.0,0.06,0.8401616146872314,0.8776134032709761,0.8777078965758212,331.98405783499993,/content/LORA-course-project/artifacts/bert_full_ft_hparam_search/checkpoints/config_03/checkpoint-1521,109484547,109484547,1.0
+8,5e-05,4,0.01,0.06,0.8392641378271128,0.8770909241270037,0.8784067085953878,345.58525234599983,/content/LORA-course-project/artifacts/bert_full_ft_hparam_search/checkpoints/config_08/checkpoint-1521,109484547,109484547,1.0
+7,5e-05,4,0.0,0.06,0.8371182956972593,0.8733012985990127,0.872816212438854,405.4090013209998,/content/LORA-course-project/artifacts/bert_full_ft_hparam_search/checkpoints/config_07/checkpoint-1521,109484547,109484547,1.0
+5,3e-05,4,0.0,0.06,0.8365061022678978,0.8734957754638928,0.8721174004192872,449.02348052699995,/content/LORA-course-project/artifacts/bert_full_ft_hparam_search/checkpoints/config_05/checkpoint-1521,109484547,109484547,1.0
+6,3e-05,4,0.01,0.06,0.8303911096903532,0.8691438216689795,0.8693221523410203,422.37108636799985,/content/LORA-course-project/artifacts/bert_full_ft_hparam_search/checkpoints/config_06/checkpoint-1521,109484547,109484547,1.0
+2,1e-05,4,0.01,0.06,0.829313518403607,0.8685910634696193,0.8686233403214535,279.76723411,/content/LORA-course-project/artifacts/bert_full_ft_hparam_search/checkpoints/config_02/checkpoint-1521,109484547,109484547,1.0
+1,1e-05,4,0.0,0.06,0.8251469721217073,0.8645052718605722,0.8651292802236199,292.20261446300003,/content/LORA-course-project/artifacts/bert_full_ft_hparam_search/checkpoints/config_01/checkpoint-2028,109484547,109484547,1.0
