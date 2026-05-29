@@ -1,0 +1,2 @@
+model,adaptation,test_macro_f1,test_weighted_f1,test_accuracy,bearish_f1,bullish_f1,neutral_f1,total_params,trainable_params,trainable_share,training_time_sec
+google/flan-t5-small,LoRA,0.7500407874653646,0.8183081269650044,0.8174204355108877,0.6410958904109589,0.7223427331887202,0.8866837387964148,77649280,688128,0.008862001038515747,358.13541020499997

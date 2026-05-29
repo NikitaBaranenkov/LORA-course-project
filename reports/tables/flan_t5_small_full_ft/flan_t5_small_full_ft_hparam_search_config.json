@@ -1,0 +1,88 @@
+{
+  "dataset_name": "zeroshot/twitter-financial-news-sentiment",
+  "model": "google/flan-t5-small",
+  "adaptation": "full fine-tuning",
+  "seed": 42,
+  "max_source_length": 128,
+  "max_target_length": 8,
+  "prompt_template": "Classify the financial sentiment of the text. Return exactly one label: Bearish, Bullish, or Neutral. Text: {text} Sentiment:",
+  "selection_metric": "macro_f1",
+  "selection_split": "validation",
+  "test_evaluation_after_validation_selection_only": true,
+  "fixed_grid": [
+    {
+      "learning_rate": 1e-05,
+      "num_train_epochs": 3,
+      "weight_decay": 0.0,
+      "warmup_ratio": 0.06,
+      "per_device_train_batch_size": 8,
+      "per_device_eval_batch_size": 16,
+      "gradient_accumulation_steps": 2
+    },
+    {
+      "learning_rate": 1e-05,
+      "num_train_epochs": 3,
+      "weight_decay": 0.01,
+      "warmup_ratio": 0.06,
+      "per_device_train_batch_size": 8,
+      "per_device_eval_batch_size": 16,
+      "gradient_accumulation_steps": 2
+    },
+    {
+      "learning_rate": 2e-05,
+      "num_train_epochs": 3,
+      "weight_decay": 0.0,
+      "warmup_ratio": 0.06,
+      "per_device_train_batch_size": 8,
+      "per_device_eval_batch_size": 16,
+      "gradient_accumulation_steps": 2
+    },
+    {
+      "learning_rate": 2e-05,
+      "num_train_epochs": 3,
+      "weight_decay": 0.01,
+      "warmup_ratio": 0.06,
+      "per_device_train_batch_size": 8,
+      "per_device_eval_batch_size": 16,
+      "gradient_accumulation_steps": 2
+    },
+    {
+      "learning_rate": 3e-05,
+      "num_train_epochs": 3,
+      "weight_decay": 0.0,
+      "warmup_ratio": 0.06,
+      "per_device_train_batch_size": 8,
+      "per_device_eval_batch_size": 16,
+      "gradient_accumulation_steps": 2
+    },
+    {
+      "learning_rate": 3e-05,
+      "num_train_epochs": 3,
+      "weight_decay": 0.01,
+      "warmup_ratio": 0.06,
+      "per_device_train_batch_size": 8,
+      "per_device_eval_batch_size": 16,
+      "gradient_accumulation_steps": 2
+    }
+  ],
+  "fixed_training_settings": {
+    "generation_max_length": 8,
+    "generation_num_beams": 1,
+    "fp16": false,
+    "use_gradient_checkpointing": false
+  },
+  "selected_config": {
+    "learning_rate": 3e-05,
+    "num_train_epochs": 3,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.06,
+    "per_device_train_batch_size": 8,
+    "per_device_eval_batch_size": 16,
+    "gradient_accumulation_steps": 2
+  },
+  "selected_best_checkpoint": "/content/LORA-course-project/artifacts/flan_t5_small_full_ft_hparam_search/checkpoints/config_06/checkpoint-1521",
+  "selected_training_time_sec": 381.808046782,
+  "sweep_results_csv": "/content/LORA-course-project/reports/tables/flan_t5_small_full_ft/flan_t5_small_full_ft_hparam_search_validation_results.csv",
+  "final_test_results_csv": "/content/LORA-course-project/reports/tables/flan_t5_small_full_ft/flan_t5_small_full_ft_best_hparam_test_results.csv",
+  "generation_diagnostics_csv": "/content/LORA-course-project/reports/tables/flan_t5_small_full_ft/flan_t5_small_full_ft_best_hparam_generation_diagnostics.csv"
+}
